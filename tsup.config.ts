@@ -12,8 +12,6 @@ export default defineConfig({
   platform: "neutral",
   minify: false,
 
-  external: ["@sveltejs/kit", "svelte"],
-
   outExtension({ format }) {
     return {
       js: ".js",

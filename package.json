@@ -38,7 +38,7 @@
     "url": "https://github.com/rashadilliyas/webreq/issues"
   },
   "scripts": {
-    "build": "tsup src/*",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "runex": "tsx src/index.ts",
     "dev": "tsup src/index.ts --watch",
     "typecheck": "tsc --noEmit",
