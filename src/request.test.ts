@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { request, ErrorType, type RequestFailure } from "./req.ts";
+import { request, ErrorType, type RequestFailure } from "./request.ts";
 
 function fakeFetch(response: Response | (() => Response), delayMs = 0) {
   const calls: { url: RequestInfo | URL; init?: RequestInit }[] = [];
